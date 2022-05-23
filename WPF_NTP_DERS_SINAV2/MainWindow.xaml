@@ -1,0 +1,29 @@
+﻿<Window x:Class="WPF_NTP_DERS_SINAV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_NTP_DERS_SINAV2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF716D6D">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#FFEC7827">
+            <Grid Height="100" Background="#FF475367" Width="176">
+                <Image HorizontalAlignment="Left" Height="133" VerticalAlignment="Bottom" Width="115" Margin="16,0,0,-37" Source="/cleaner.png" Stretch="UniformToFill"/>
+            </Grid>
+            <Button x:Name="Button_Islemler" Content="ANASAYFA" Height="27" Background="#FFB57548" BorderBrush="{x:Null}" Foreground="White" FontFamily="Candara Light" FontSize="18" FontStyle="Normal" FontWeight="Normal" BorderThickness="5,0,0,0" Click="Button_Islemler_Click" />
+            <Button x:Name="Button_Musteriler" Content="MÜŞTERİLER" Height="27" Background="#FFB57548" BorderBrush="{x:Null}" Foreground="White" FontFamily="Candara Light" FontSize="18" FontStyle="Normal" FontWeight="Normal" BorderThickness="5,0,0,0" Click="Button_Musteriler_Click" />
+            <Button x:Name="Button_Personeller" Content="PERSONEL" Height="27" Background="#FFB57548" BorderBrush="{x:Null}" Foreground="White" FontFamily="Candara Light" FontSize="18" FontStyle="Normal" FontWeight="Normal" BorderThickness="5,0,0,0" Click="Button_Personeller_Click" />
+            <Button x:Name="Button_Hizmetler" Content="HİZMETLER" Height="27" Background="#FFB57548" BorderBrush="{x:Null}" Foreground="White" FontFamily="Candara Light" FontSize="18" FontStyle="Normal" FontWeight="Normal" BorderThickness="5,0,0,0" Click="Button_Hizmetler_Click"/>
+        </StackPanel>
+        <Frame x:Name="frame_islemler" Grid.Column="1" Content="" NavigationUIVisibility="Hidden">
+            <Frame.Background>
+                <ImageBrush ImageSource="/cleaner.png" Stretch="None" TileMode="None" Opacity="0.1"/>
+            </Frame.Background>
+        </Frame>
+    </Grid>
+</Window>
