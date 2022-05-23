@@ -1,4 +1,1 @@
-# WPF_NTP_DERS_SINAV2
-AMINAGODUMUNSINAVI HOCAM KB
-hocam zor yükledim
-yükleyemedim...
+
